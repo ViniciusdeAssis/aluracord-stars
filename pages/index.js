@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import appConfig from '../config.json';
 
 function Titulo(props) {
-    console.log(props);
     const Tag = props.tag || 'h1';
     return (
         <>
@@ -27,7 +26,7 @@ function Titulo(props) {
 //        <div>
 //            <GlobalStyle/>
 //            <Titulo tag="h2">Boas vindas de volta!</Titulo>
-//            <h2>Discord - Yeeniv </h2>
+//            <h2>Discord - Vinicius de Assis </h2>
 //        </div>
 //    );
 //  }
@@ -44,10 +43,15 @@ export default function PaginaInicial() {
         <>
             <Box
                 styleSheet={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center',
                     backgroundColor: appConfig.theme.colors.primary[600],
                     backgroundImage: 'url(https://images.unsplash.com/photo-1515651571008-95427bed8e0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1197&q=80)',
-                    backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
+                    backgroundRepeat: 'no-repeat', 
+                    backgroundSize: 'cover', 
+                    backgroundBlendMode: 'multiply',
+                    
                     
                 }}
             >
@@ -60,22 +64,23 @@ export default function PaginaInicial() {
                             xs: 'column',
                             sm: 'row',
                         },
-                        width: '100%', maxWidth: '700px',
-                        borderRadius: '5px', padding: '32px', margin: '16px',
-                        boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
-                        backgroundColor: appConfig.theme.colors.primary[200],
-                        
-                        
-                        
+                        width: '100%', 
+                        maxWidth: '700px',
+                        borderRadius: '20px', 
+                        padding: '42px', 
+                        margin: '16px',
+                        boxShadow: "35px 35px 20px 30px rgba(0, 0, 0, .8)",
+                         
                     }}
                 >
                     {/* Formulário */}
                     <Box
                         as="form"
-                        onSubmite={function (infosDoEvento) {
+                        onSubmit={function (infosDoEvento) {
                             infosDoEvento.preventDefault();
                             console.log('Alguém submeteu o form');
-                            roteamento.push('/chat');
+                            roteamento.push(`/chat?username=${username}`);
+                            // window.location.href = '/chat';
                         }}
                         styleSheet={{
                             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
@@ -84,7 +89,7 @@ export default function PaginaInicial() {
                             
                         }}
                     >
-                        <Titulo tag="h2">Bem vindo @!</Titulo>
+                        <Titulo tag="h2">Bem vindo @ !</Titulo>
                         <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
                             {appConfig.name}
                         </Text>
@@ -134,7 +139,7 @@ export default function PaginaInicial() {
                             padding: '16px',
                             backgroundColor: appConfig.theme.colors.primary[400],
                             border: '1px solid',
-                            borderColor: appConfig.theme.colors.primary[600],
+                            borderColor: appConfig.theme.colors.primary[400],
                             borderRadius: '10px',
                             flex: 1,
                             minHeight: '240px',

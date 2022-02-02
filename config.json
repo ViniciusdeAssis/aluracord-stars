@@ -1,13 +1,7 @@
 {
-  "stickers": [
-    "http://2.bp.blogspot.com/-d21tffsTIQo/U_H9QjC69gI/AAAAAAAAKqM/wnvOyUr6a_I/s1600/Pikachu%2B2.gif",
-    "https://media1.giphy.com/media/BdghqxNFV4efm/200.gif",
-    "https://c.tenor.com/TKpmh4WFEsAAAAAC/alura-gaveta-filmes.gif",
-    "https://i.pinimg.com/originals/0b/1c/23/0b1c2307c83e1ebdeed72e41b9a058ad.gif",
-    "https://c.tenor.com/VylWt5lyjBoAAAAC/omg-yes.gif",
-    "https://i.pinimg.com/originals/96/34/c5/9634c520c9a3cd4e7f23190bb2c96500.gif"
+  "stickers": ["https://media.giphy.com/media/5UqWIbfRyfTjaRulMO/giphy.gif","https://media.giphy.com/media/PSKAppO2LH56w/giphy.gif","https://media.giphy.com/media/ZzPotw0bSEyxH6i4Ed/giphy.gif","https://media.giphy.com/media/chWeOzhXp06L95Ji7e/giphy.gif","https://media.giphy.com/media/D08aklo5n0hi5PJyZw/giphy.gif","https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif","https://media.giphy.com/media/3ornjPteRwwUdSWifC/giphy.gif","https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif"
   ],
-  "name": "Aluracord",
+  "name": "Aluracord-Stars",
   "theme": {
     "colors": {
       "primary": {
